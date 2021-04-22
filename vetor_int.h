@@ -10,6 +10,7 @@
 #define TIPO "d"
 
 #include "vetor.h"
+#include "Complexo.h"
 
 #undef TYPE
 #undef TYPED

@@ -141,8 +141,8 @@ void TYPED(AtribuiValorUltimaPosicao)(TYPED(vetor_t)* vetor, double valor) {
 }
 
 
-TYPE TYPED(EliminaValorEmI)(TYPED(vetor_t)* vetor, int posicao) {
-    TYPE temp = vetor->vet[posicao];
+TYPE TYPED(EliminaValorEmI)(TYPED(vetor_t)* vetor, int posicao) { // Posicao começando em 1
+    TYPE temp = vetor->vet[posicao - 1];
     for (int i = posicao - 1; i < vetor->nAtual - 1; ++i) {
         vetor->vet[i] = vetor->vet[i+1];
     }
@@ -246,8 +246,6 @@ TYPED(vetor_t)* TYPED(DevolveVetorComElementosIguais)(TYPED(vetor_t)* vetor, dou
         }
         temp2 ++;
     }
-
-
 
     return novo;
 }

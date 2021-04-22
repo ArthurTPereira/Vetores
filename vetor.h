@@ -38,7 +38,7 @@ void TYPED(AtribuiValorEmI)(TYPED(vetor_t)* vetor, int i, TYPE valor);
 
 void TYPED(AtribuiValorUltimaPosicao)(TYPED(vetor_t)* vetor, double valor);
 
-TYPE TYPED(EliminaValorEmI)(TYPED(vetor_t)* vetor, int posicao);
+TYPE TYPED(EliminaValorEmI)(TYPED(vetor_t)* vetor, int posicao); // Posicao começando em 1
 
 void TYPED(EliminaTodosElementos)(TYPED(vetor_t)* vetor);
 

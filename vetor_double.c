@@ -9,6 +9,7 @@
 #define TIPO "lf"
 
 #include "vetor.c"
+#include "Complexo.c"
 
 #undef TYPE
 #undef TYPED
