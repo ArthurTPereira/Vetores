@@ -89,7 +89,7 @@ TYPE TYPED(DevolvePrimeiroElemento)(TYPED(vetor_t)* vetor) {
 
 TYPE TYPED(DevolveProximoElemento)(TYPED(vetor_t)* vetor) {
     if (vetor->i == vetor->nAtual) {
-        printf("deu zika");
+        printf("Posição máxima alcançada.");
         return 0;
     }
     
@@ -99,7 +99,7 @@ TYPE TYPED(DevolveProximoElemento)(TYPED(vetor_t)* vetor) {
 
 TYPE TYPED(DevolveElementoAnterior)(TYPED(vetor_t)* vetor) {
     if (vetor->i == 0) {
-        printf("deu zika");
+        printf("Posição mínima alcançada.");
         return 0;
     }
     
@@ -233,7 +233,6 @@ TYPED(vetor_t)* TYPED(DevolveVetorComElementosIguais)(TYPED(vetor_t)* vetor, dou
         if (vetor->vet[i] - valor > -0.0001 && vetor->vet[i] - valor < 0.0001) {
             novo->vet[temp] = i;
             temp++;
-            printf("%d",i);
         }
     }
 
@@ -439,7 +438,7 @@ void TYPED(OrdenaElementosVetor)(TYPED(vetor_t)* vetor, int crit) {
 void TYPED(ColocaValores)(TYPED(vetor_t)* vetor) {
     srand(time(NULL));
     for (int i = 0; i < vetor->nAtual; ++i) {
-        vetor->vet[i] = (TYPE)(rand() % 20 + 1);
+        vetor->vet[i] = (TYPE)(rand() % 5 + 1);
         //vetor->vet[i] = (TYPE)4;
     }
 }

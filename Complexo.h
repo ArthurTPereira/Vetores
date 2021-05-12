@@ -58,5 +58,8 @@ TYPED(complexo_t)* TYPED(alteraMagnitude)(TYPED(complexo_t)* complexo, int escal
 
 TYPED(complexo_t)* TYPED(alteraFase)(TYPED(complexo_t)* complexo);
 
+void TYPED(MudaMagnitude)(TYPED(complexo_t)* complexo, TYPE escalar);
+
+void TYPED(DividePorEscalar)(TYPED(complexo_t)* complexo, TYPE escalar);
 #endif
 #endif

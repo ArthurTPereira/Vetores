@@ -76,7 +76,6 @@ int TYPED(Criterio)(TYPE a, TYPE b);
 
 void TYPED(OrdenaElementosVetor)(TYPED(vetor_t)* vetor, int crit);
 
-
 void TYPED(ColocaValores)(TYPED(vetor_t)* vetor);
 
 #endif

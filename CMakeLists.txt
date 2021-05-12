@@ -10,4 +10,8 @@ add_executable(Vetores
         vetor_int.h
         vetor_int.c
         vetor_complexo.h
-        vetor_complexo.c)
+        vetor_complexo.c
+        Complexo.c
+        Complexo.h)
+
+target_link_libraries(Vetores m)

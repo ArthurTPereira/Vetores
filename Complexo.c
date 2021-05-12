@@ -223,5 +223,15 @@ TYPED(complexo_t)* TYPED(alteraFase)(TYPED(complexo_t)* complexo) {
     return transformado;
 }
 
+void TYPED(MudaMagnitude)(TYPED(complexo_t)* complexo, TYPE escalar) {
+    complexo->real *= escalar;
+    complexo->img *= escalar;
+}
+
+void TYPED(DividePorEscalar)(TYPED(complexo_t)* complexo, TYPE escalar) {
+    complexo->real /= (TYPE)escalar;
+    complexo->img /= (TYPE)escalar;
+}
+
 #endif
 #endif
